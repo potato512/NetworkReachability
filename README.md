@@ -1,6 +1,8 @@
 # NetworkReachability
 网络监测Reachability
 
+~~~ javascript
+
 #import "ReachabilityHelper.h"
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions 
@@ -16,3 +18,5 @@
 
     return YES;
 }
+
+~~~
