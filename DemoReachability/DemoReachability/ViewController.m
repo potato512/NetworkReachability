@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "ReachabilityHelper.h"
+#import "SYReachability.h"
 
 @interface ViewController ()
 
@@ -33,18 +33,19 @@
 {
     NSString *message = @"";
     // 方法1
-//    if ([[ReachabilityHelper shareReachability] NetworkStatus] == kNotReachable)
-//    {
-//        message = @"无网络";
-//    }
-//    else if ([[ReachabilityHelper shareReachability] NetworkStatus] == kReachableViaWWAN)
-//    {
-//        message = @"无限广域网";
-//    }
-//    else if ([[ReachabilityHelper shareReachability] NetworkStatus] == kReachableViaWiFi)
-//    {
-//        message = @"WiFi环境";
-//    }
+    if ([[SYReachability shareReachability] NetworkStatus] == kNotReachable)
+    {
+        message = @"无网络";
+    }
+    else if ([[SYReachability shareReachability] NetworkStatus] == kReachableViaWWAN)
+    {
+        message = @"无限广域网";
+    }
+    else if ([[SYReachability shareReachability] NetworkStatus] == kReachableViaWiFi)
+    {
+        message = @"WiFi环境";
+    }
+    
     // 方法2
     message = (isNotReachable ? @"无网络" : (isWifi ? @"WiFi环境" : @"无限广域网"));
     

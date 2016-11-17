@@ -1,24 +1,24 @@
 //
-//  NetworkManager.m
-//  AMF
+//  SYReachability.m
+//  zhangshaoyu
 //
 //  Created by zhangshaoyu on 14-7-14.
 //  Copyright (c) 2014年 zhangshaoyu. All rights reserved.
 //
 
-#import "ReachabilityHelper.h"
+#import "SYReachability.h"
 
 static NetworkStatus staticCurrentNetworkStatus;   // 当前网络连接
 
-@implementation ReachabilityHelper
+@implementation SYReachability
 {
     Reachability *hostReachbility;
 }
 
 // 单例模式
-+ (ReachabilityHelper *)shareReachability
++ (SYReachability *)shareReachability
 {
-    static ReachabilityHelper *staticNetworkStatusManager;
+    static SYReachability *staticNetworkStatusManager;
     static dispatch_once_t onceToken;
     
     dispatch_once(&onceToken, ^{
@@ -72,7 +72,7 @@ static NetworkStatus staticCurrentNetworkStatus;   // 当前网络连接
 }
 
 // 获得当前的网络状态，wifi
-- (BOOL)NetworkWifi
+- (BOOL)isNetworkWifi
 {
     if (kReachableViaWiFi == staticCurrentNetworkStatus)
     {
@@ -82,7 +82,7 @@ static NetworkStatus staticCurrentNetworkStatus;   // 当前网络连接
 }
 
 // 获得当前的网络状态，无网络
-- (BOOL)NetworkNotReachable
+- (BOOL)isNetworkNotReachable
 {
     if (kNotReachable == staticCurrentNetworkStatus)
     {
@@ -92,7 +92,7 @@ static NetworkStatus staticCurrentNetworkStatus;   // 当前网络连接
 }
 
 // 获得当前的网络状态，WWAN
-- (BOOL)NetworkWWAN
+- (BOOL)isNetworkWWAN
 {
     if (kReachableViaWWAN == staticCurrentNetworkStatus)
     {

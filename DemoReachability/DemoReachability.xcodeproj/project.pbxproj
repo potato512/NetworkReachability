@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7C294F11DDD56D2004C5457 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C294EE1DDD56D2004C5457 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A7C294F21DDD56D2004C5457 /* SYReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C294F01DDD56D2004C5457 /* SYReachability.m */; };
 		A7DBC1C81B6F1D8700E3F667 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DBC1C71B6F1D8700E3F667 /* main.m */; };
 		A7DBC1CB1B6F1D8700E3F667 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DBC1CA1B6F1D8700E3F667 /* AppDelegate.m */; };
 		A7DBC1CE1B6F1D8700E3F667 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DBC1CD1B6F1D8700E3F667 /* ViewController.m */; };
@@ -14,8 +16,6 @@
 		A7DBC1D31B6F1D8700E3F667 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7DBC1D21B6F1D8700E3F667 /* Images.xcassets */; };
 		A7DBC1D61B6F1D8700E3F667 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7DBC1D41B6F1D8700E3F667 /* LaunchScreen.xib */; };
 		A7DBC1E21B6F1D8700E3F667 /* DemoReachabilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DBC1E11B6F1D8700E3F667 /* DemoReachabilityTests.m */; };
-		A7DBC1F11B6F256700E3F667 /* ReachabilityHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DBC1ED1B6F256700E3F667 /* ReachabilityHelper.m */; };
-		A7DBC1F21B6F256700E3F667 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DBC1F01B6F256700E3F667 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A7C294ED1DDD56D2004C5457 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		A7C294EE1DDD56D2004C5457 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		A7C294EF1DDD56D2004C5457 /* SYReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYReachability.h; sourceTree = "<group>"; };
+		A7C294F01DDD56D2004C5457 /* SYReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYReachability.m; sourceTree = "<group>"; };
 		A7DBC1C21B6F1D8700E3F667 /* DemoReachability.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoReachability.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7DBC1C61B6F1D8700E3F667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7DBC1C71B6F1D8700E3F667 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,10 +46,6 @@
 		A7DBC1DB1B6F1D8700E3F667 /* DemoReachabilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoReachabilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7DBC1E01B6F1D8700E3F667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7DBC1E11B6F1D8700E3F667 /* DemoReachabilityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoReachabilityTests.m; sourceTree = "<group>"; };
-		A7DBC1EC1B6F256700E3F667 /* ReachabilityHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachabilityHelper.h; sourceTree = "<group>"; };
-		A7DBC1ED1B6F256700E3F667 /* ReachabilityHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachabilityHelper.m; sourceTree = "<group>"; };
-		A7DBC1EF1B6F256700E3F667 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		A7DBC1F01B6F256700E3F667 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +66,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7C294EB1DDD56D2004C5457 /* SYReachability */ = {
+			isa = PBXGroup;
+			children = (
+				A7C294EC1DDD56D2004C5457 /* Reachability */,
+				A7C294EF1DDD56D2004C5457 /* SYReachability.h */,
+				A7C294F01DDD56D2004C5457 /* SYReachability.m */,
+			);
+			path = SYReachability;
+			sourceTree = "<group>";
+		};
+		A7C294EC1DDD56D2004C5457 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				A7C294ED1DDD56D2004C5457 /* Reachability.h */,
+				A7C294EE1DDD56D2004C5457 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
 		A7DBC1B91B6F1D8700E3F667 = {
 			isa = PBXGroup;
 			children = (
@@ -91,7 +110,7 @@
 				A7DBC1CA1B6F1D8700E3F667 /* AppDelegate.m */,
 				A7DBC1CC1B6F1D8700E3F667 /* ViewController.h */,
 				A7DBC1CD1B6F1D8700E3F667 /* ViewController.m */,
-				A7DBC1EB1B6F256700E3F667 /* ReachabilityHepler */,
+				A7C294EB1DDD56D2004C5457 /* SYReachability */,
 				A7DBC1CF1B6F1D8700E3F667 /* Main.storyboard */,
 				A7DBC1D21B6F1D8700E3F667 /* Images.xcassets */,
 				A7DBC1D41B6F1D8700E3F667 /* LaunchScreen.xib */,
@@ -124,25 +143,6 @@
 				A7DBC1E01B6F1D8700E3F667 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A7DBC1EB1B6F256700E3F667 /* ReachabilityHepler */ = {
-			isa = PBXGroup;
-			children = (
-				A7DBC1EC1B6F256700E3F667 /* ReachabilityHelper.h */,
-				A7DBC1ED1B6F256700E3F667 /* ReachabilityHelper.m */,
-				A7DBC1EE1B6F256700E3F667 /* Reachability */,
-			);
-			path = ReachabilityHepler;
-			sourceTree = "<group>";
-		};
-		A7DBC1EE1B6F256700E3F667 /* Reachability */ = {
-			isa = PBXGroup;
-			children = (
-				A7DBC1EF1B6F256700E3F667 /* Reachability.h */,
-				A7DBC1F01B6F256700E3F667 /* Reachability.m */,
-			);
-			path = Reachability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,11 +245,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7DBC1F11B6F256700E3F667 /* ReachabilityHelper.m in Sources */,
 				A7DBC1CE1B6F1D8700E3F667 /* ViewController.m in Sources */,
 				A7DBC1CB1B6F1D8700E3F667 /* AppDelegate.m in Sources */,
+				A7C294F21DDD56D2004C5457 /* SYReachability.m in Sources */,
+				A7C294F11DDD56D2004C5457 /* Reachability.m in Sources */,
 				A7DBC1C81B6F1D8700E3F667 /* main.m in Sources */,
-				A7DBC1F21B6F256700E3F667 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +448,7 @@
 				A7DBC1E71B6F1D8700E3F667 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A7DBC1E81B6F1D8700E3F667 /* Build configuration list for PBXNativeTarget "DemoReachabilityTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +457,7 @@
 				A7DBC1EA1B6F1D8700E3F667 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

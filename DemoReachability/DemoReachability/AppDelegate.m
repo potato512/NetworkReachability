@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-#import "ReachabilityHelper.h"
+#import "SYReachability.h"
 
 @interface AppDelegate ()
 
@@ -20,7 +20,8 @@
     // Override point for customization after application launch.
     
     // 开启网络状态监听
-    [[ReachabilityHelper shareReachability] startNetworkStatusNotifier];
+    [[SYReachability shareReachability] startNetworkStatusNotifier];
+    
     
     ViewController *vc = [[ViewController alloc] init];
     UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:vc];
